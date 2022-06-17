@@ -1,3 +1,10 @@
+import {LogBox} from "react-native";
+LogBox.ignoreLogs([
+"ViewPropTypes will be removed",
+"ColorPropType will be removed",
+])
+// error solved, see discussion: https://github.com/facebook/react-native/issues/33557
+
 import react from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
