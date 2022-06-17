@@ -2,6 +2,8 @@
 
 # get data from yelp
 
+# navigation
+
 # dotenv
 
 # issues
