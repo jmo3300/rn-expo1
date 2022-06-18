@@ -12,7 +12,7 @@ export interface IRestaurantResult {
   error: AxiosError | Error | null
 }
 
-const useRestaurant = (id: string) => {
+const useRestaurant = () => {
 
   const [RestaurantResult, setRestaurantResult] = useState<IRestaurantResult>({ restaurant: null, loading: false, error: null })
 

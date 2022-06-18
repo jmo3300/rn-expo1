@@ -57,8 +57,8 @@ const Restaurant = (props: Props) => {
         <Image style={styles.image} source={{ uri: result.restaurant.image_url }}></Image>
         <Text style={styles.name}>{result.restaurant.name}</Text>
         <View style={styles.propertiesContainer}>
-          <View style={styles.qualityContainer}>
-            <Text style={styles.qualityLabel}>Rating:</Text>
+          <View style={styles.propertyContainer}>
+            <Text style={styles.label}>Rating:</Text>
             {result.restaurant.quality ?
               <StarRating
                 containerStyle={styles.ratingContainer}
@@ -83,8 +83,8 @@ const Restaurant = (props: Props) => {
               </View>
             }
           </View>
-          <View style={styles.priceContainer}>
-            <Text style={styles.priceLabel}>Price Level:</Text>
+          <View style={styles.propertyContainer}>
+            <Text style={styles.label}>Price Level:</Text>
             {result.restaurant.price ?
               <StarRating
                 containerStyle={styles.ratingContainer}
@@ -146,20 +146,18 @@ const styles = StyleSheet.create({
   propertiesContainer: {
     marginLeft: 10
   },
+  propertyContainer: {
+    flexDirection: 'row'
+  },
   ratingContainer: {
     justifyContent: 'flex-start'
   },
-  qualityContainer: {
-    width: 200
-  },
-  qualityLabel: {
+  label: {
+    width:'30%',
     fontSize: 14
   },
-  priceContainer: {
-    width: 200
-  },
-  priceLabel: {
-    fontSize: 14
+  property: {
+    width:'70%'
   },
   noInfoRow: {
     flexDirection: 'row',

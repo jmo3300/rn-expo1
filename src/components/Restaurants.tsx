@@ -24,7 +24,7 @@ const Restaurants = () => {
       onPress={() => {
         navigation.navigate('Restaurant', { id: restaurant.id });
       }}>
-      <View style={styles.row}>
+      <View style={styles.rowContainer}>
         <Image style={styles.image} source={{ uri: restaurant.image_url }}></Image>
         <View style={styles.details}>
           <Text style={styles.name}>{restaurant.name}</Text>
@@ -117,6 +117,7 @@ const Restaurants = () => {
 }
 
 const styles = StyleSheet.create({
+  ...commons.styles,
   loadingContainer: {
     height: '100%',
     backgroundColor: commons.loadingBackroundColor,
@@ -134,22 +135,20 @@ const styles = StyleSheet.create({
   ratingContainer: {
     justifyContent: 'flex-start'
   },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
   image: {
     width: 75,
     height: 75,
     borderRadius: 50,
-    margin: 10
+    marginLeft: 5,
+    marginRight:10
   },
   details: {
     flexDirection: 'column',
   },
   name: {
     fontSize: 16,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    marginBottom:10
   },
   ratings: {
     flexDirection: 'row',

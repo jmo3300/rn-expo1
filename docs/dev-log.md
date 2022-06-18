@@ -2,6 +2,8 @@
 
 # get data from yelp
 
+# ActivityIndicator / Spinner
+
 # navigation
 
 # dotenv
