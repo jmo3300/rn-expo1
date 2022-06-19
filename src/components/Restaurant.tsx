@@ -153,11 +153,11 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start'
   },
   label: {
-    width:'30%',
+    width: '30%',
     fontSize: 14
   },
   property: {
-    width:'70%'
+    width: '70%'
   },
   noInfoRow: {
     flexDirection: 'row',

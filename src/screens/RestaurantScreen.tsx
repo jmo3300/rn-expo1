@@ -1,11 +1,11 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import { RootStackParamsList } from "../../App"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Restaurant from "../components/Restaurant"
 
-type Props = NativeStackScreenProps<RootStackParamsList, 'Restaurant'>;
+type Props = NativeStackScreenProps<RootStackParamsList, 'RestaurantScreen'>;
 // see: https://reactnavigation.org/docs/typescript/
 
 export default function RestaurantScreen({route}:Props) {

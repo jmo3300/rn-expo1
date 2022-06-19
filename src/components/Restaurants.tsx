@@ -1,6 +1,6 @@
-import { useNavigation } from "@react-navigation/native";
 import { useEffect } from "react";
 import { ActivityIndicator, FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import axios from "axios";
 
@@ -22,7 +22,7 @@ const Restaurants = () => {
   const Restaurant = ({ restaurant }: { restaurant: IRestaurant }) => (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate('Restaurant', { id: restaurant.id });
+        navigation.navigate('Restaurant Details', { id: restaurant.id });
       }}>
       <View style={styles.rowContainer}>
         <Image style={styles.image} source={{ uri: restaurant.image_url }}></Image>
