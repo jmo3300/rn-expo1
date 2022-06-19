@@ -1,19 +1,12 @@
-import { NativeStackScreenProps } from "@react-navigation/native-stack"
-import { StyleSheet, Text, View } from "react-native"
-import { RootStackParamsList } from "../../App"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import Preferences from "../components/Preferences"
-import Restaurant from "../components/Restaurant"
+import { StyleSheet, View } from "react-native"
 
-type Props = NativeStackScreenProps<RootStackParamsList, 'RestaurantScreen'>;
-// see: https://reactnavigation.org/docs/typescript/
+import Footer from "../components/Footer"
+import Preferences from "../components/Preferences"
 
 export default function PreferencesScreen() {
 
   return (
     <View style={styles.container}>
-      <Header style={styles.header} />
       <View style={styles.payload}>
         <Preferences />
       </View>

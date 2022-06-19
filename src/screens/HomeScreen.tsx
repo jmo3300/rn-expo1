@@ -1,12 +1,10 @@
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet, View } from "react-native"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
 import Restaurants from "../components/Restaurants"
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Header style={styles.header} />
       <View style={styles.payload}>
         <View style={styles.list}>
           <Restaurants />

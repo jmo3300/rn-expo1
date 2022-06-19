@@ -2,10 +2,9 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { StyleSheet, Text, View } from "react-native"
 import { RootStackParamsList } from "../../App"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
 import Restaurant from "../components/Restaurant"
 
-type Props = NativeStackScreenProps<RootStackParamsList, 'RestaurantScreen'>;
+type Props = NativeStackScreenProps<RootStackParamsList, 'Restaurant Details'>;
 // see: https://reactnavigation.org/docs/typescript/
 
 export default function RestaurantScreen({route}:Props) {
@@ -14,7 +13,6 @@ export default function RestaurantScreen({route}:Props) {
 
   return (
     <View style={styles.container}>
-      <Header style={styles.header} />
       <View style={styles.payload}>
         <Restaurant id = {id}/>
       </View>
